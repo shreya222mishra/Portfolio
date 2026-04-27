@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Interactive software engineering portfolio for Shreya Mishra, MS CS student at the University of Maryland."
+    />
+    <title>Shreya Mishra | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="constellation" aria-hidden="true"></canvas>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="motion-field" aria-hidden="true">
+      <span class="motion-chip chip-one">React</span>
+      <span class="motion-chip chip-two">AWS</span>
+      <span class="motion-chip chip-three">PyTorch</span>
+      <span class="motion-chip chip-four">REST</span>
+      <span class="motion-chip chip-five">SQL</span>
+      <span class="motion-glyph glyph-one">{ }</span>
+      <span class="motion-glyph glyph-two">&lt;/&gt;</span>
+      <span class="motion-glyph glyph-three">01</span>
+      <span class="motion-orb orb-one"></span>
+      <span class="motion-orb orb-two"></span>
+      <span class="motion-orb orb-three"></span>
+      <span class="motion-ring ring-one"></span>
+      <span class="motion-ring ring-two"></span>
+      <span class="motion-line line-one"></span>
+      <span class="motion-line line-two"></span>
+      <span class="motion-line line-three"></span>
+    </div>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Shreya Mishra home">
+        <span class="brand-mark">SM</span>
+        <span>Shreya Mishra</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#connect">Connect</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#connect">Connect</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">MS Computer Science @ University of Maryland</p>
+          <h1>Software engineer building reliable systems with AI, cloud, data, and a little motion.</h1>
+          <p class="hero-summary">
+            I am Shreya Mishra, a software engineer and tech student focused on backend systems, secure AI/ML
+            infrastructure, large-scale data workflows, and product experiences that feel useful from the first click.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio links">
+            <a class="primary-action magnet" href="#projects">Explore work</a>
+            <a class="secondary-action magnet" href="https://drive.google.com/file/d/1OzRaWqZ3MP2DUwbI5QTuACnMHWRM57Fk/view?usp=sharing">Resume</a>
+            <a class="icon-action magnet" href="https://github.com/shreya222mishra" aria-label="GitHub profile">GitHub</a>
+            <a class="icon-action magnet" href="https://www.linkedin.com/in/shreya222mishra/" aria-label="LinkedIn profile">LinkedIn</a>
+          </div>
+          <div class="hero-stats" aria-label="Top resume highlights">
+            <div>
+              <strong>Masters in Computer science</strong>
+              <span>Master's in Computer Science at the University of Maryland, focused on databases and secure AI/ML infrastructure.</span>
+            </div>
+            <div>
+              <strong>Competitive programmer</strong>
+              <span>Competitive programmer and hackathon builder with a Bitcamp 2026 winning project in digital forensics.</span>
+            </div>
+            <div>
+              <strong>End-to-end products</strong>
+              <span>Builds end-to-end products across backend systems, AI workflows, healthcare tools, games, and 500GB+ data pipelines.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="student-stage" data-reveal>
+          <div class="orbit orbit-one" aria-hidden="true">
+            <span>Python</span>
+            <span>AWS</span>
+            <span>React</span>
+            <span>LLM Security</span>
+          </div>
+          <div class="orbit orbit-two" aria-hidden="true">
+            <span>REST</span>
+            <span>PyTorch</span>
+            <span>SQL</span>
+            <span>Spark</span>
+          </div>
+          <div class="avatar-card">
+            <div class="avatar-head">
+              <span class="hair"></span>
+              <span class="face"></span>
+            </div>
+            <div class="avatar-body">
+              <span class="hoodie"></span>
+              <span class="laptop">
+                <span class="screen-line one"></span>
+                <span class="screen-line two"></span>
+                <span class="screen-line three"></span>
+              </span>
+            </div>
+            <div class="terminal-float">
+              <span>$ ship --reliable</span>
+              <span>tests: green</span>
+              <span>latency: -25%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ticker-band" aria-label="Core technologies" data-reveal>
+        <div class="ticker-track">
+          <span>Python</span><span>Java</span><span>C++</span><span>Go</span><span>Node.js</span><span>SQL</span>
+          <span>AWS Lambda</span><span>DynamoDB</span><span>API Gateway</span><span>Docker</span><span>CloudWatch</span>
+          <span>PyTorch</span><span>NLP</span><span>Hadoop</span><span>Spark</span><span>Datadog</span>
+          <span>Python</span><span>Java</span><span>C++</span><span>Go</span><span>Node.js</span><span>SQL</span>
+        </div>
+      </section>
+
+      <section class="section-shell skills-showcase" id="skills">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Skills</p>
+          <h2>&lt;My Skills /&gt;</h2>
+        </div>
+        <div class="skill-grid" aria-label="Technical skills">
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon python">Py</span>
+            <strong>Python</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon java">Jv</span>
+            <strong>Java</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon cpp">C++</span>
+            <strong>C++</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon go">Go</span>
+            <strong>Go</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon js">JS</span>
+            <strong>JavaScript</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon react">⚛</span>
+            <strong>React</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon node">N</span>
+            <strong>Node.js</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon sql">SQL</span>
+            <strong>SQL</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon aws">AWS</span>
+            <strong>AWS</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon docker">▣</span>
+            <strong>Docker</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon torch">PT</span>
+            <strong>PyTorch</strong>
+          </article>
+          <article class="skill-tile magnet" data-reveal>
+            <span class="skill-icon spark">Sp</span>
+            <strong>Spark</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell strengths" id="strengths">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Engineering strengths</p>
+          <h2>Where I create the most leverage.</h2>
+        </div>
+        <div class="strength-grid">
+          <article class="strength-card magnet" data-reveal>
+            <span class="card-index">01</span>
+            <h3>Backend systems with measurable impact</h3>
+            <p>REST integrations, AWS workflows, DynamoDB access tuning, and production runbooks tied to cost and latency improvements.</p>
+          </article>
+          <article class="strength-card magnet" data-reveal>
+            <span class="card-index">02</span>
+            <h3>AI and data pipelines</h3>
+            <p>Forecasting, NLP, BERT-LDA clustering, LSTM experiments, and large-scale ETL pipelines built for repeatability and speed.</p>
+          </article>
+          <article class="strength-card magnet" data-reveal>
+            <span class="card-index">03</span>
+            <h3>Reliability and observability</h3>
+            <p>CloudWatch metrics, monitoring, debugging steps, safe logging, edge-case testing, and documentation that shortens triage loops.</p>
+          </article>
+          <article class="strength-card magnet" data-reveal>
+            <span class="card-index">04</span>
+            <h3>Interactive product thinking</h3>
+            <p>Gamified flows, geolocation challenges, dashboards, healthcare reminders, and student-facing learning apps designed around real behavior.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell split-section" id="experience">
+        <div class="section-heading sticky-heading" data-reveal>
+          <p class="eyebrow">Experience</p>
+          <h2>Production, research, and teaching.</h2>
+          <p>
+            My work blends production engineering with applied data and AI systems, from Amazon backend workflows to
+            ISRO forecasting pipelines and UMD graduate teaching.
+          </p>
+        </div>
+        <div class="timeline" aria-label="Experience timeline">
+          <article class="timeline-item" data-reveal>
+            <time>Jun 2025 - Aug 2025</time>
+            <h3>Software Development Intern, Amazon</h3>
+            <p>Delivered backend workflow enhancements that reduced transport cost by 18%, optimized REST API integrations on AWS, and improved request latency by 25%.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <time>Apr 2022 - Jul 2022</time>
+            <h3>Software Analyst Intern, Space Applications Centre, ISRO</h3>
+            <p>Built ARIMA and LSTM forecasting workflows over 500GB+ time-series data, improving accuracy by 14%, and created scalable ETL pipelines with Hadoop/Spark.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <time>Jul 2021 - Sep 2021</time>
+            <h3>Development Intern, IIT Indore</h3>
+            <p>Automated experimentation and optimization in Python, speeding exploration loops by 22% and documenting threat-mitigation choices.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <time>Jun 2021 - Aug 2021</time>
+            <h3>Decision Analytics Intern, MAX IV Laboratory, Lund University</h3>
+            <p>Built Python/MATLAB tooling for experimental workflow analysis, achieving 92.7% accuracy and improving anomaly detection by 12%.</p>
+          </article>
+          <article class="timeline-item" data-reveal>
+            <time>2024 - 2026</time>
+            <h3>Teaching Assistant, UMD Science Academy</h3>
+            <p>TA for Big Data Systems and Principles of Data Science, supporting graduate students through data systems, analytics, and ML foundations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell projects" id="projects">
+        <div class="coding-backdrop" aria-hidden="true">
+          <div class="coding-window">
+            <span class="window-dot one"></span>
+            <span class="window-dot two"></span>
+            <span class="window-dot three"></span>
+            <span class="code-line line-a"></span>
+            <span class="code-line line-b"></span>
+            <span class="code-line line-c"></span>
+            <span class="code-line line-d"></span>
+          </div>
+          <div class="coding-girl">
+            <span class="coding-hair"></span>
+            <span class="coding-face"></span>
+            <span class="coding-body"></span>
+            <span class="coding-arm left"></span>
+            <span class="coding-arm right"></span>
+            <span class="coding-laptop"></span>
+          </div>
+        </div>
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Projects</p>
+          <h2>Interactive workbench of shipped ideas.</h2>
+        </div>
+        <div class="filter-bar" role="toolbar" aria-label="Project filters" data-reveal>
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="ai">AI/ML</button>
+          <button class="filter" type="button" data-filter="cyber">Cyber Attack</button>
+          <button class="filter" type="button" data-filter="product">Product</button>
+          <button class="filter" type="button" data-filter="health">Health</button>
+        </div>
+        <div class="project-grid">
+          <article class="project-card magnet" data-tags="cyber" data-reveal>
+            <div class="project-topline">
+              <span>Winner · Bitcamp 2026</span>
+              <span>May 2026</span>
+            </div>
+            <h3>QWave</h3>
+            <p>Digital forensics system using Python and quantum-inspired optimization to process 10K+ audio artifacts and detect hidden, encrypted, and obfuscated patterns.</p>
+            <ul>
+              <li>End-to-end ingestion, feature extraction, and indexed storage pipeline.</li>
+              <li>Reduced investigation time by roughly 40% through fast pattern retrieval.</li>
+            </ul>
+            <a href="https://devpost.com/software/quanterp">View QWave on Devpost</a>
+          </article>
+          <article class="project-card magnet" data-tags="health" data-reveal>
+            <div class="project-topline">
+              <span>Healthcare workflow</span>
+              <span>Mar 2025</span>
+            </div>
+            <h3>Re-Medi</h3>
+            <p>Medication adherence product with verification workflows and personalized timezone-aware reminders.</p>
+            <ul>
+              <li>Reduced missed-dose cases by 30% in pilot outcomes.</li>
+              <li>Improved privacy through data minimization, safe logging, and defensive input handling.</li>
+            </ul>
+            <a href="https://devpost.com/software/re-medi">View Re-Medi on Devpost</a>
+          </article>
+          <article class="project-card magnet" data-tags="product" data-reveal>
+            <div class="project-topline">
+              <span>Gamified app</span>
+              <span>Feb 2025</span>
+            </div>
+            <h3>API: A Prehistoric Island</h3>
+            <p>Location-aware gamified experience using Google Maps API and Gemini for animated storytelling and geolocation challenges.</p>
+            <ul>
+              <li>Increased pilot engagement by 35%.</li>
+              <li>Designed responsive real-time interaction flows.</li>
+            </ul>
+            <a href="https://devpost.com/software/api-a-prehistoric-island">View API on Devpost</a>
+          </article>
+          <article class="project-card magnet" data-tags="ai" data-reveal>
+            <div class="project-topline">
+              <span>NLP pipeline</span>
+              <span>May 2025</span>
+            </div>
+            <h3>Sentimental Analysis</h3>
+            <p>End-to-end review intelligence pipeline processing 10K+ reviews with Transformers/BERT, NLTK, Scrapy, and BERT-LDA clustering.</p>
+            <ul>
+              <li>Extracted six sentiment and topic clusters.</li>
+              <li>Improved reproducibility for product insight workflows.</li>
+            </ul>
+          </article>
+          <article class="project-card magnet" data-tags="product" data-reveal>
+            <div class="project-topline">
+              <span>300+ students</span>
+              <span>Jan 2022</span>
+            </div>
+            <h3>PROBAR</h3>
+            <p>Educational quiz mobile application with sign-in, quizzes, results, and progress tracking built around student usability and reliability.</p>
+            <ul>
+              <li>Supported core learning workflows for 300+ students.</li>
+              <li>Focused on clear navigation and dependable progress state.</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1HnZDSuHk574b_xUbXH2Eky49oJo6qrOv/view?usp=sharing">View PROBAR documentation</a>
+          </article>
+          <article class="project-card source-card magnet" data-tags="all" data-reveal>
+            <div class="project-topline">
+              <span>Devpost profile</span>
+              <span>5 projects</span>
+            </div>
+            <h3>Hackathon Builder Track</h3>
+            <p>Five Devpost project pages show a builder range across digital forensics, Claude-powered safety tooling, healthcare reminders, sustainability workflows, and geolocation-based interactive learning.</p>
+            <a href="https://devpost.com/shreya222mishra?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">View Devpost</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell education-lab">
+        <div class="lab-panel" data-reveal>
+          <p class="eyebrow">Education</p>
+          <h2>MS in Computer Science, UMD College Park</h2>
+          <p>Expected graduation: May 2026. GPA: 3.75. Concentrations in Database Systems and Secure AI/ML Infrastructures.</p>
+          <div class="course-cloud" aria-label="Relevant coursework">
+            <span>Advanced Computer Systems</span>
+            <span>Database Management Systems</span>
+            <span>NLP</span>
+            <span>LLM Security</span>
+          </div>
+        </div>
+        <div class="hackathon-panel" data-reveal>
+          <p class="eyebrow">Hackathons</p>
+          <h2>Fast builds, real demos, winning proof.</h2>
+          <div class="hackathon-list">
+            <a class="winner-link" href="https://devpost.com/software/quanterp">Bitcamp · 2026 Winner · QWave</a>
+            <a href="https://devpost.com/software/safehouse-tqx2i5?ref_content=user-portfolio&ref_feature=in_progress">Anthropic x Claude · SafeHouse</a>
+            <a href="https://devpost.com/software/reharvest">Amazon Bay Area Intern Hackathon · ReHarvest</a>
+            <a href="https://devpost.com/software/re-medi">MorganHacks · Re-Medi</a>
+            <a href="https://devpost.com/software/api-a-prehistoric-island">Bitcamp 2025 · API: A Prehistoric Island</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell contact" id="connect">
+        <div data-reveal>
+          <p class="eyebrow">Connect</p>
+          <h2>Let’s build systems that are useful, fast, and trustworthy.</h2>
+          <p>
+            I am especially interested in software engineering roles where backend systems, AI/data workflows,
+            reliability, and human-centered product work meet.
+          </p>
+        </div>
+        <div class="contact-actions" data-reveal>
+          <button class="primary-action magnet contact-toggle" type="button" aria-expanded="false" aria-controls="contact-modal">Contact me</button>
+          <a class="secondary-action magnet" href="https://www.linkedin.com/in/shreya222mishra/">LinkedIn</a>
+          <a class="secondary-action magnet" href="https://github.com/shreya222mishra">GitHub</a>
+          <a class="secondary-action magnet" href="https://drive.google.com/file/d/1OzRaWqZ3MP2DUwbI5QTuACnMHWRM57Fk/view?usp=sharing">Resume PDF</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-controls" aria-label="Display controls">
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <span>Dark</span>
+      </button>
+      <button class="contact-float-toggle" type="button" aria-expanded="false" aria-controls="contact-modal">Contact me</button>
+    </div>
+
+    <div class="contact-modal" id="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title" hidden>
+      <div class="contact-modal-backdrop" data-close-contact></div>
+      <section class="contact-modal-card" tabindex="-1">
+        <button class="modal-close" type="button" aria-label="Close contact popup" data-close-contact>×</button>
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-modal-title">Contact me</h2>
+        <div class="contact-info" aria-label="Contact information">
+          <a href="mailto:smishra0@terpmail.umd.edu">
+            <span>Email</span>
+            <strong>smishra0@terpmail.umd.edu</strong>
+          </a>
+          <a href="tel:+16692495686">
+            <span>Mobile</span>
+            <strong>+1 669 249 5686</strong>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
